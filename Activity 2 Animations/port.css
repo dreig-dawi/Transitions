@@ -1,0 +1,97 @@
+/* Definició d'animacions */
+@keyframes moveIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+ /* Aplicació d'animacions */
+        img {
+            animation: moveIn 1s ease-in;
+            max-width: 200px;
+        }
+
+/* Definició d'animacions */
+      @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+ 
+            to {
+                opacity: 1;
+            }
+        }
+ 
+        @keyframes slideIn {
+            from {
+                transform: translateY(-50%);
+            }
+ 
+            to {
+                transform: translateY(0);
+            }
+        }
+
+ /* Aplicació d'animacions */
+h2 {
+  animation: fadeIn 2s ease-in;
+}
+ 
+h3 {
+  animation: slideIn 2s ease-in;
+}
+
+ul{
+display: flex;
+flex-wrap: wrap;
+}
+
+ul li{
+width: 50%;
+}
+
+
+/****/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.bounce-button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+/* Animación de rebote */
+.bounce-button:hover {
+  animation: bounce 0.6s ease;
+}
+
+/* Definición de la animación */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
