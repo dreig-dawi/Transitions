@@ -1,0 +1,36 @@
+<html>
+ 
+<head>
+    <style>
+        /* Definim el quadrat rosa i la seva mida. */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+
+        }
+ 
+        /* Definim la classe d'animació que farà que el quadrat canvii de mida. */
+        .mida {
+            animation: resize 2s ease-in-out infinite;
+        }
+ 
+        
+@keyframes resize{
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+    </style>
+</head>
+ 
+<body>
+   
+    <div class="square mida"></div>
+</body>
+ 
+</html>
