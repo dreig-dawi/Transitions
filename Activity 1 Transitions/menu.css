@@ -1,0 +1,49 @@
+@charset "UTF-8";
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+nav {
+  background-color: #e6e6e6;
+  padding: 10px;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0 5px;
+}
+nav ul li ul {
+  display: none;
+}
+nav ul li:hover ul {
+  display: block;
+  padding: 0;
+  position: absolute;
+  padding-top: 10px;
+  transition: opacity 0.3s ease;
+  opacity: 1;
+}
+nav ul li:hover ul li {
+  margin: 0;
+  padding: 10px 0;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+nav ul a:hover {
+  background-color: #555;
+  /* Color de fons quan està 'hover'. */
+  color: #fff;
+  /* Color del text quan està 'hover'. */
+  transition: background-color 0.3s ease, color 0.3s ease;
+  /*Transició per al canvi de color. */
+}
+
+/*# sourceMappingURL=menu.css.map */
+
