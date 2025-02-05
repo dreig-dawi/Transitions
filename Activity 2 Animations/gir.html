@@ -1,0 +1,36 @@
+<html>
+ 
+<head>
+    <style>
+        /* Definim el quadrat rosa i la seva mida. */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+
+        }
+ 
+        /* Definim la classe d'animació que farà que el quadrat giri. */
+        .gir {
+            animation: spin 2s linear infinite;
+        }
+ 
+        
+     @keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+</head>
+ 
+<body>
+   
+    <div class="square gir"></div>
+</body>
+ 
+</html>
