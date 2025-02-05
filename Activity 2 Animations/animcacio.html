@@ -1,0 +1,37 @@
+<html>
+ 
+<head>
+    <style>
+        /* Definim el quadrat rosa i la seva mida. */
+        .square {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            position: relative;
+            
+        }
+ 
+        /* Definim la classe d'animació que farà que el quadrat es mogui de dreta a esquerra. */
+        .movement {
+            animation: move-left 5s linear infinite;
+        }
+ 
+        /* Definim la seqüència d'animació en si. */
+        @keyframes move-left {
+            from {
+                transform: translate(0%, 0%);
+            }
+ 
+            to {
+                transform: translate(-100%,0%);
+            }
+        }
+    </style>
+</head>
+ 
+<body>
+    <!-- Incloem el quadrat al document amb la classe d'animació aplicada. -->
+    <div class="square movement"></div>
+</body>
+ 
+</html>
